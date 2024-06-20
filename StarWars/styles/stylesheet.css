@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "StarWars";
+  src: url(../font/starjedi/Starjedi.ttf);
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#starfield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#title {
+  font-size: 50px;
+  font-family: "StarWars";
+  /* text shadow, zorgt voor de glow effect om de text heen.  */
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700,
+    0 0 20px #ffd700, 0 0 25px #ffd700, 0 0 30px #ffd700, 0 0 35px #ffd700;
+  color: black;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+#infoBoxWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#infoBox1,
+#infoBox2,
+#infoBox3 {
+  padding: 5px;
+  margin: 20px;
+  border: white solid 1px;
+  border-radius: 8%;
+  min-width: 15vw;
+  max-width: 15vw;
+}
